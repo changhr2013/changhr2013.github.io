@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="在Linux中安装MySQL数据库后，有时候我们需要修改MySQL数据库的默认编码格式，本文介绍如何在Linux环境下设置和修改MySQL数据库的编码格式。 首先查找MySql的cnf文件的位置：">
+<meta name="description" content="在Linux中安装MySQL数据库后，有时候我们需要修改MySQL数据库的默认编码格式，本文介绍如何在Linux环境下设置和修改MySQL数据库的编码格式。 默认登录MySQL之后可以通过SHOW VARIABLES语句查看系统变量及其值。">
 <meta name="keywords" content="MySQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux下设置MySQL的编码">
 <meta property="og:url" content="http://aihaoran.top/2017/08/24/Linux下设置MySQL的编码/index.html">
 <meta property="og:site_name" content="FutureWeb">
-<meta property="og:description" content="在Linux中安装MySQL数据库后，有时候我们需要修改MySQL数据库的默认编码格式，本文介绍如何在Linux环境下设置和修改MySQL数据库的编码格式。 首先查找MySql的cnf文件的位置：">
+<meta property="og:description" content="在Linux中安装MySQL数据库后，有时候我们需要修改MySQL数据库的默认编码格式，本文介绍如何在Linux环境下设置和修改MySQL数据库的编码格式。 默认登录MySQL之后可以通过SHOW VARIABLES语句查看系统变量及其值。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-24T05:44:29.473Z">
+<meta property="og:updated_time" content="2017-08-24T07:14:09.137Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux下设置MySQL的编码">
-<meta name="twitter:description" content="在Linux中安装MySQL数据库后，有时候我们需要修改MySQL数据库的默认编码格式，本文介绍如何在Linux环境下设置和修改MySQL数据库的编码格式。 首先查找MySql的cnf文件的位置：">
+<meta name="twitter:description" content="在Linux中安装MySQL数据库后，有时候我们需要修改MySQL数据库的默认编码格式，本文介绍如何在Linux环境下设置和修改MySQL数据库的编码格式。 默认登录MySQL之后可以通过SHOW VARIABLES语句查看系统变量及其值。">
 
 
 
@@ -319,6 +319,17 @@
 
                 
                 
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术文摘/数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
+                  </a>
+                </span>
+
+                
+                
               
             </span>
           
@@ -350,15 +361,17 @@
 
       
         <p>在Linux中安装MySQL数据库后，有时候我们需要修改MySQL数据库的默认编码格式，本文介绍如何在Linux环境下设置和修改MySQL数据库的编码格式。</p>
-<p>首先查找MySql的cnf文件的位置：<a id="more"></a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root@localhost /]<span class="comment"># find / -iname '*.cnf' -print</span></div></pre></td></tr></table></figure></p>
+<p>默认登录MySQL之后可以通过SHOW VARIABLES语句查看系统变量及其值。<a id="more"></a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mysql&gt; show variables like <span class="string">'%character%'</span>;</div></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">+--------------------------+----------------------------+</div><div class="line">| Variable_name            | Value                      |</div><div class="line">+--------------------------+----------------------------+</div><div class="line">| character_set_client     | lantin1                    |</div><div class="line">| character_set_connection | lantin1                    |</div><div class="line">| character_set_database   | lantin1                    |</div><div class="line">| character_set_filesystem | binary                     |</div><div class="line">| character_set_results    | lantin1                    |</div><div class="line">| character_set_server     | lantin1                    |</div><div class="line">| character_set_system     | utf8                       |</div><div class="line">| character_sets_dir       | /usr/share/mysql/charsets/ |</div><div class="line">+--------------------------+----------------------------+</div></pre></td></tr></table></figure>
+<p>首先查找MySQL的cnf文件的位置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root@localhost /]<span class="comment"># find / -iname '*.cnf' -print</span></div></pre></td></tr></table></figure></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">/etc/pki/tls/openssl.cnf</div><div class="line">/etc/my.cnf</div><div class="line">/usr/share/openvpn/easy-rsa/2.0/openssl-0.9.6.cnf</div><div class="line">/usr/share/openvpn/easy-rsa/2.0/openssl.cnf</div><div class="line">/usr/share/openvpn/easy-rsa/1.0/openssl.cnf</div><div class="line">/usr/share/mysql/my-small.cnf</div><div class="line">/usr/share/mysql/my-large.cnf</div><div class="line">/usr/share/mysql/my-innodb-heavy-4G.cnf</div><div class="line">/usr/share/mysql/my-huge.cnf</div><div class="line">/usr/share/mysql/my-medium.cnf</div><div class="line">/usr/share/doc/mysql-server-5.5.18/my-small.cnf</div><div class="line">/usr/share/doc/mysql-server-5.5.18/my-large.cnf</div><div class="line">/usr/share/doc/mysql-server-5.5.18/my-innodb-heavy-4G.cnf</div><div class="line">/usr/share/doc/mysql-server-5.5.18/my-huge.cnf</div><div class="line">/usr/share/doc/mysql-server-5.5.18/my-medium.cnf</div></pre></td></tr></table></figure>
-<p>然后拷贝my-small.cnf、my-medium.cnf、my-huge.cnf、my-innodb-heavy-4G.cnf 其中一个到 /etc/my.cnf 下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[root@localhost /]<span class="comment"># cp /usr/share/mysql/my-medium.cnf /etc/my.cnf </span></div><div class="line">cp：是否覆盖<span class="string">"/etc/my.cnf"</span>？ y</div></pre></td></tr></table></figure></p>
-<p>再修改my.cnf<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root@localhost /]<span class="comment"># vi /etc/my.cnf</span></div></pre></td></tr></table></figure></p>
-<p>在[client]下添加<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">default-character-set=utf8</div></pre></td></tr></table></figure></p>
-<p>在[mysqld]下添加<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">collation_server = utf8_general_ci</div><div class="line">character_set_server = utf8</div></pre></td></tr></table></figure></p>
-<p>保存退出后重启mysqld：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root@localhost /]<span class="comment">#service mysqld restart</span></div></pre></td></tr></table></figure></p>
+<p>然后拷贝<code>my-small.cnf</code>、<code>my-large.cnf</code>、<code>my-medium.cnf</code>、<code>my-huge.cnf</code>、<code>my-innodb-heavy-4G.cnf</code> 其中一个到 /etc/my.cnf 下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[root@localhost /]<span class="comment"># cp /usr/share/mysql/my-medium.cnf /etc/my.cnf </span></div><div class="line">cp：是否覆盖<span class="string">"/etc/my.cnf"</span>？ y</div></pre></td></tr></table></figure></p>
+<p>再修改<code>my.cnf</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root@localhost /]<span class="comment"># vi /etc/my.cnf</span></div></pre></td></tr></table></figure></p>
+<p>在<code>[client]</code>下添加<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">default-character-set=utf8</div></pre></td></tr></table></figure></p>
+<p>在<code>[mysqld]</code>下添加<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">collation_server = utf8_general_ci</div><div class="line">character_set_server = utf8</div></pre></td></tr></table></figure></p>
+<p>保存退出后重启<code>mysqld</code>：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root@localhost /]<span class="comment">#service mysqld restart</span></div></pre></td></tr></table></figure></p>
 <p>完成以上的操作就OK了。</p>
-<p>看一下效果:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mysql&gt; show variables like <span class="string">'character_set_%'</span>;</div></pre></td></tr></table></figure></p>
+<p>登录MySQL看一下效果:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mysql&gt; show variables like <span class="string">'character_set_%'</span>;</div></pre></td></tr></table></figure></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">+--------------------------+----------------------------+</div><div class="line">| Variable_name            | Value                      |</div><div class="line">+--------------------------+----------------------------+</div><div class="line">| character_set_client     | utf8                       |</div><div class="line">| character_set_connection | utf8                       |</div><div class="line">| character_set_database   | utf8                       |</div><div class="line">| character_set_filesystem | binary                     |</div><div class="line">| character_set_results    | utf8                       |</div><div class="line">| character_set_server     | utf8                       |</div><div class="line">| character_set_system     | utf8                       |</div><div class="line">| character_sets_dir       | /usr/share/mysql/charsets/ |</div><div class="line">+--------------------------+----------------------------+</div></pre></td></tr></table></figure>
       
     </div>
@@ -478,7 +491,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
