@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aihaoran.top/"/>
-  <updated>2017-10-18T13:14:48.336Z</updated>
+  <updated>2017-10-18T13:59:25.565Z</updated>
   <id>http://aihaoran.top/</id>
   
   <author>
@@ -20,13 +20,13 @@
     <link href="http://aihaoran.top/2017/10/18/WorldWind%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://aihaoran.top/2017/10/18/WorldWind学习笔记/</id>
     <published>2017-10-18T12:39:08.000Z</published>
-    <updated>2017-10-18T13:14:48.336Z</updated>
+    <updated>2017-10-18T13:59:25.565Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>最近公司交给的任务提前完成了，老大让研究一下WorldWindJava搞3D的地图，于是入了WorldWind的坑开始了倒腾之路。</p>
 </blockquote>
 <p>大致部署了一下开发环境，计划按照官方给的12个大类102个Demo逐个进行解读，一边啃一边记录吧。<a id="more"></a></p>
-<p>官网给的目录如下：</p>
+<p>官网给的<a href="https://worldwind.arc.nasa.gov/java/examples/" target="_blank" rel="external">Demo目录</a>如下：</p>
 <ol>
 <li>Basics</li>
 <li>Layers</li>
