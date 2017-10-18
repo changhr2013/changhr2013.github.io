@@ -28,6 +28,18 @@
 <h2 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h2><p>SimplestPossibleExample - 演示用最简单的方式创建一个WorldWind应用程序。<br>HelloWorldWind - 详细地展示如何去创建一个基本的WorldWind程序。<br>ApplicationTemplate - 用一个简单的WordWind例子来展现一个基于WorldWind的基础应用框架。<br>Shutdown - 展示如何去关闭一个WorldWindow和怎样去结束所有的WorldWind。</p>
 ]]></content>
       
+        <categories>
+            
+            <category> 学习笔记 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> WorlsWindJava </tag>
+            
+        </tags>
         
     </entry>
     

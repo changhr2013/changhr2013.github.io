@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aihaoran.top/"/>
-  <updated>2017-10-18T13:11:56.033Z</updated>
+  <updated>2017-10-18T13:14:48.336Z</updated>
   <id>http://aihaoran.top/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://aihaoran.top/2017/10/18/WorldWind%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://aihaoran.top/2017/10/18/WorldWind学习笔记/</id>
     <published>2017-10-18T12:39:08.000Z</published>
-    <updated>2017-10-18T13:11:56.033Z</updated>
+    <updated>2017-10-18T13:14:48.336Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>最近公司交给的任务提前完成了，老大让研究一下WorldWindJava搞3D的地图，于是入了WorldWind的坑开始了倒腾之路。</p>
@@ -54,6 +54,10 @@
     
     </summary>
     
+      <category term="学习笔记" scheme="http://aihaoran.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="WorlsWindJava" scheme="http://aihaoran.top/tags/WorlsWindJava/"/>
     
   </entry>
   
