@@ -3,6 +3,17 @@
   
     
     <entry>
+      <title><![CDATA[WorldWind学习笔记]]></title>
+      <url>/2017/10/18/WorldWind%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>最近公司交给的任务提前完成了，老大让研究一下WorldWindJava搞3D的地图，于是入了WorldWind的坑开始了倒腾之路。</p>
+</blockquote>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Linux下设置MySQL的编码]]></title>
       <url>/2017/08/24/Linux%E4%B8%8B%E8%AE%BE%E7%BD%AEMySQL%E7%9A%84%E7%BC%96%E7%A0%81/</url>
       <content type="html"><![CDATA[<p>在Linux中安装MySQL数据库后，有时候我们需要修改MySQL数据库的默认编码格式，本文介绍如何在Linux环境下设置和修改MySQL数据库的编码格式。</p>
