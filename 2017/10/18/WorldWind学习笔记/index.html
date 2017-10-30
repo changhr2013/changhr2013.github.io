@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="WorlsWindJava," />
+  <meta name="keywords" content="WorldWindJava," />
 
 
 
@@ -97,14 +97,14 @@
 
 
 <meta name="description" content="最近公司交给的任务提前完成了，老大让研究一下WorldWindJava搞3D的地图，于是入了WorldWind的坑开始了倒腾之路。  大致部署了一下开发环境，计划按照官方给的12个大类102个Demo逐个进行解读，一边啃一边记录吧。">
-<meta name="keywords" content="WorlsWindJava">
+<meta name="keywords" content="WorldWindJava">
 <meta property="og:type" content="article">
 <meta property="og:title" content="WorldWind学习笔记">
 <meta property="og:url" content="http://aihaoran.top/2017/10/18/WorldWind学习笔记/index.html">
 <meta property="og:site_name" content="FutureWeb">
 <meta property="og:description" content="最近公司交给的任务提前完成了，老大让研究一下WorldWindJava搞3D的地图，于是入了WorldWind的坑开始了倒腾之路。  大致部署了一下开发环境，计划按照官方给的12个大类102个Demo逐个进行解读，一边啃一边记录吧。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-18T13:59:25.565Z">
+<meta property="og:updated_time" content="2017-10-30T16:51:51.241Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WorldWind学习笔记">
 <meta name="twitter:description" content="最近公司交给的任务提前完成了，老大让研究一下WorldWindJava搞3D的地图，于是入了WorldWind的坑开始了倒腾之路。  大致部署了一下开发环境，计划按照官方给的12个大类102个Demo逐个进行解读，一边啃一边记录吧。">
@@ -395,7 +395,7 @@
 
       
         <blockquote>
-<p>最近公司交给的任务提前完成了，老大让研究一下WorldWindJava搞3D的地图，于是入了WorldWind的坑开始了倒腾之路。</p>
+<p>最近公司交给的任务提前完成了，老大让研究一下WorldWindJava搞3D的地图，于是入了<a href="https://worldwind.arc.nasa.gov/" target="_blank" rel="external">WorldWind</a>的坑开始了倒腾之路。</p>
 </blockquote>
 <p>大致部署了一下开发环境，计划按照官方给的12个大类102个Demo逐个进行解读，一边啃一边记录吧。<a id="more"></a></p>
 <p>官网给的<a href="https://worldwind.arc.nasa.gov/java/examples/" target="_blank" rel="external">Demo目录</a>如下：</p>
@@ -415,6 +415,17 @@
 <li>Multiwindow</li>
 </ol>
 <h2 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h2><p>SimplestPossibleExample - 演示用最简单的方式创建一个WorldWind应用程序。<br>HelloWorldWind - 详细地展示如何去创建一个基本的WorldWind程序。<br>ApplicationTemplate - 用一个简单的WordWind例子来展现一个基于WorldWind的基础应用框架。<br>Shutdown - 展示如何去关闭一个WorldWindow和怎样去结束所有的WorldWind。</p>
+<h2 id="Layers"><a href="#Layers" class="headerlink" title="Layers"></a>Layers</h2><p>OnScreenLayerManager - 使用工具类LayerManagerLayer示范在地图上浮动一个图层管理插件。<br>WMSLayerManager - 示范使用多个WMS图层，今年给他们展示在WMSLayerPanel上。<br>LayerTreeUsage - 使用BasicTree在地图上去展示一个图层列表。<br>Graticule - 展示全球经纬标线 (经纬度网格)。<br>MGRSGraticule - 展示全球MGRS/UTM坐标网格。  </p>
+<blockquote>
+<p>军事格网参考系 (MGRS) 是一种基于格网的参考系，用于在通用横轴墨卡托投影 (UTM) 和通用极方位立体投影 (UPS) 格网系中以字母数字字符串的形式表示位置。</p>
+</blockquote>
+<h2 id="View"><a href="#View" class="headerlink" title="View"></a>View</h2><p>ViewLookAround - Demonstrates how to ‘look around’ a scene by controlling the view’s pitch, heading, roll and field of view, in this case by using a simple set of sliders.</p>
+<p>ViewIteration - Demonstrates how to animate the view from one position on the globe to another.</p>
+<p>AddAnimator - Demonstrates the use of BasicFlyView with a FlyToFlyViewAnimator, allowing the user to fly smoothly to new locations by simply specifying a location’s name or lat-long coordinates.</p>
+<p>ViewSwitch - Demonstrates the difference between BasicOrbitView and BasicFlyView. Allows the user to select the preferred view type and then enter the name or lat-lon coordinates of a new location to animate the view to.</p>
+<p>ViewLimits - Demonstrates how to keep the view within certain bounds.</p>
+<p>KeepingObjectsInView - Demonstrates keeping a set of scene elements visible by using the utility class ExtentVisibilitySupport.</p>
+<p>ViewControls - Shows the ViewControlsLayer and allows you to adjust its size, orientation, and the available controls.</p>
 
       
     </div>
@@ -432,7 +443,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/WorlsWindJava/" rel="tag"># WorlsWindJava</a>
+            <a href="/tags/WorldWindJava/" rel="tag"># WorldWindJava</a>
           
         </div>
       
@@ -454,6 +465,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/31/World-Wind-Java-主要包功能说明/" rel="prev" title="World Wind Java 主要包功能说明">
+                World Wind Java 主要包功能说明 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -532,7 +547,7 @@
             
               <a href="/archives">
             
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -631,7 +646,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Basics"><span class="nav-number">1.</span> <span class="nav-text">Basics</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Basics"><span class="nav-number">1.</span> <span class="nav-text">Basics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Layers"><span class="nav-number">2.</span> <span class="nav-text">Layers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#View"><span class="nav-number">3.</span> <span class="nav-text">View</span></a></li></ol></div>
             
 
           </div>

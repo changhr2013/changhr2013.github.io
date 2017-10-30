@@ -294,6 +294,232 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://aihaoran.top/2017/10/31/World-Wind-Java-主要包功能说明/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="浩然">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="FutureWeb">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/31/World-Wind-Java-主要包功能说明/" itemprop="url">World Wind Java 主要包功能说明</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-31T00:50:05+08:00">
+                2017-10-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/10/31/World-Wind-Java-主要包功能说明/" class="leancloud_visitors" data-flag-title="World Wind Java 主要包功能说明">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="World-Wind-Java主要包内容简表"><a href="#World-Wind-Java主要包内容简表" class="headerlink" title="World Wind Java主要包内容简表"></a>World Wind Java主要包内容简表</h1><table>
+<thead>
+<tr>
+<th>包</th>
+<th>包说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gov.nasa.worldwind</td>
+<td>World Wind顶级包</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.animation</td>
+<td>动画类定义包，指定位置、角度等方式的动画飞行过程及控制</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwindx.applications</td>
+<td>World Wind 的应用例程，包括Java Application 和Java Applet，还有许多扩展应用的例子都已经编写成了Java Application供用户直接测试使用</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.avlist</td>
+<td>变量名称（Key）与变量值（Value）对应类定义包，包括设置与获取操作</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.awt</td>
+<td>抽象窗口工具包，建立World wind画布等工作都在这里实现</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.catch</td>
+<td>缓存定义包，包含了对文件缓存，内存缓存，图像（纹理）缓存的定义和管理</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.data</td>
+<td>数据格式定义包，内容提供了对 .tiff、.bil、.png、.dds等多种原始栅格文件格式向World Wind组件可用的图层，高程格式转换的方法类</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.event</td>
+<td>事件与侦听器定义包，包括检索、渲染、位置变动事件和侦听器，以及鼠标的选择、拖拽、树操作等动作事件和侦听器</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.exception</td>
+<td>异常定义包，包括服务异常、请求异常等运行时异常</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.geom</td>
+<td>地理概念定义包</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.geom.coords</td>
+<td>地理空间投影定义包</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.globes</td>
+<td>球体参数定义包，包含了地球、火星和月球</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.layers</td>
+<td>图层定义包，主要是基础抽象图层和装饰、操作控制图层，比较有开发自由度的图层仅有SurfaceImageLayer和IconLayer</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.layers.Earth</td>
+<td>地球图层定义包，包括全部NASA支持或可以通过互联网获取的WMS服务，大多数类代码非常简单，详细的定义在config.earth包下的同名xml文件中，渲染通过layers包中的TileImageLayer实现</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.layers.placename</td>
+<td>利用NASA的WFS服务提供的PlaceName服务渲染的代码类包</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.ogc</td>
+<td>定义OGC包和其子包中的常量</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://aihaoran.top/2017/10/18/WorldWind学习笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -398,7 +624,7 @@
       
         
           <blockquote>
-<p>最近公司交给的任务提前完成了，老大让研究一下WorldWindJava搞3D的地图，于是入了WorldWind的坑开始了倒腾之路。</p>
+<p>最近公司交给的任务提前完成了，老大让研究一下WorldWindJava搞3D的地图，于是入了<a href="https://worldwind.arc.nasa.gov/" target="_blank" rel="external">WorldWind</a>的坑开始了倒腾之路。</p>
 </blockquote>
 <p>大致部署了一下开发环境，计划按照官方给的12个大类102个Demo逐个进行解读，一边啃一边记录吧。
           <!--noindex-->
@@ -1130,7 +1356,7 @@
             
               <a href="/archives">
             
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

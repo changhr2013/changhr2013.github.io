@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aihaoran.top/"/>
-  <updated>2017-10-18T13:59:25.565Z</updated>
+  <updated>2017-10-30T16:51:52.389Z</updated>
   <id>http://aihaoran.top/</id>
   
   <author>
@@ -16,14 +16,110 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>World Wind Java 主要包功能说明</title>
+    <link href="http://aihaoran.top/2017/10/31/World-Wind-Java-%E4%B8%BB%E8%A6%81%E5%8C%85%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E/"/>
+    <id>http://aihaoran.top/2017/10/31/World-Wind-Java-主要包功能说明/</id>
+    <published>2017-10-30T16:50:05.000Z</published>
+    <updated>2017-10-30T16:51:52.389Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="World-Wind-Java主要包内容简表"><a href="#World-Wind-Java主要包内容简表" class="headerlink" title="World Wind Java主要包内容简表"></a>World Wind Java主要包内容简表</h1><table>
+<thead>
+<tr>
+<th>包</th>
+<th>包说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gov.nasa.worldwind</td>
+<td>World Wind顶级包</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.animation</td>
+<td>动画类定义包，指定位置、角度等方式的动画飞行过程及控制</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwindx.applications</td>
+<td>World Wind 的应用例程，包括Java Application 和Java Applet，还有许多扩展应用的例子都已经编写成了Java Application供用户直接测试使用</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.avlist</td>
+<td>变量名称（Key）与变量值（Value）对应类定义包，包括设置与获取操作</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.awt</td>
+<td>抽象窗口工具包，建立World wind画布等工作都在这里实现</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.catch</td>
+<td>缓存定义包，包含了对文件缓存，内存缓存，图像（纹理）缓存的定义和管理</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.data</td>
+<td>数据格式定义包，内容提供了对 .tiff、.bil、.png、.dds等多种原始栅格文件格式向World Wind组件可用的图层，高程格式转换的方法类</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.event</td>
+<td>事件与侦听器定义包，包括检索、渲染、位置变动事件和侦听器，以及鼠标的选择、拖拽、树操作等动作事件和侦听器</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.exception</td>
+<td>异常定义包，包括服务异常、请求异常等运行时异常</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.geom</td>
+<td>地理概念定义包</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.geom.coords</td>
+<td>地理空间投影定义包</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.globes</td>
+<td>球体参数定义包，包含了地球、火星和月球</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.layers</td>
+<td>图层定义包，主要是基础抽象图层和装饰、操作控制图层，比较有开发自由度的图层仅有SurfaceImageLayer和IconLayer</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.layers.Earth</td>
+<td>地球图层定义包，包括全部NASA支持或可以通过互联网获取的WMS服务，大多数类代码非常简单，详细的定义在config.earth包下的同名xml文件中，渲染通过layers包中的TileImageLayer实现</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.layers.placename</td>
+<td>利用NASA的WFS服务提供的PlaceName服务渲染的代码类包</td>
+</tr>
+<tr>
+<td>gov.nasa.worldwind.ogc</td>
+<td>定义OGC包和其子包中的常量</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;World-Wind-Java主要包内容简表&quot;&gt;&lt;a href=&quot;#World-Wind-Java主要包内容简表&quot; class=&quot;headerlink&quot; title=&quot;World Wind Java主要包内容简表&quot;&gt;&lt;/a&gt;World Wind Java主要包内容
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://aihaoran.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="WorldWindJava" scheme="http://aihaoran.top/tags/WorldWindJava/"/>
+    
+  </entry>
+  
+  <entry>
     <title>WorldWind学习笔记</title>
     <link href="http://aihaoran.top/2017/10/18/WorldWind%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://aihaoran.top/2017/10/18/WorldWind学习笔记/</id>
     <published>2017-10-18T12:39:08.000Z</published>
-    <updated>2017-10-18T13:59:25.565Z</updated>
+    <updated>2017-10-30T16:51:51.241Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
-<p>最近公司交给的任务提前完成了，老大让研究一下WorldWindJava搞3D的地图，于是入了WorldWind的坑开始了倒腾之路。</p>
+<p>最近公司交给的任务提前完成了，老大让研究一下WorldWindJava搞3D的地图，于是入了<a href="https://worldwind.arc.nasa.gov/" target="_blank" rel="external">WorldWind</a>的坑开始了倒腾之路。</p>
 </blockquote>
 <p>大致部署了一下开发环境，计划按照官方给的12个大类102个Demo逐个进行解读，一边啃一边记录吧。<a id="more"></a></p>
 <p>官网给的<a href="https://worldwind.arc.nasa.gov/java/examples/" target="_blank" rel="external">Demo目录</a>如下：</p>
@@ -43,12 +139,23 @@
 <li>Multiwindow</li>
 </ol>
 <h2 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h2><p>SimplestPossibleExample - 演示用最简单的方式创建一个WorldWind应用程序。<br>HelloWorldWind - 详细地展示如何去创建一个基本的WorldWind程序。<br>ApplicationTemplate - 用一个简单的WordWind例子来展现一个基于WorldWind的基础应用框架。<br>Shutdown - 展示如何去关闭一个WorldWindow和怎样去结束所有的WorldWind。</p>
+<h2 id="Layers"><a href="#Layers" class="headerlink" title="Layers"></a>Layers</h2><p>OnScreenLayerManager - 使用工具类LayerManagerLayer示范在地图上浮动一个图层管理插件。<br>WMSLayerManager - 示范使用多个WMS图层，今年给他们展示在WMSLayerPanel上。<br>LayerTreeUsage - 使用BasicTree在地图上去展示一个图层列表。<br>Graticule - 展示全球经纬标线 (经纬度网格)。<br>MGRSGraticule - 展示全球MGRS/UTM坐标网格。  </p>
+<blockquote>
+<p>军事格网参考系 (MGRS) 是一种基于格网的参考系，用于在通用横轴墨卡托投影 (UTM) 和通用极方位立体投影 (UPS) 格网系中以字母数字字符串的形式表示位置。</p>
+</blockquote>
+<h2 id="View"><a href="#View" class="headerlink" title="View"></a>View</h2><p>ViewLookAround - Demonstrates how to ‘look around’ a scene by controlling the view’s pitch, heading, roll and field of view, in this case by using a simple set of sliders.</p>
+<p>ViewIteration - Demonstrates how to animate the view from one position on the globe to another.</p>
+<p>AddAnimator - Demonstrates the use of BasicFlyView with a FlyToFlyViewAnimator, allowing the user to fly smoothly to new locations by simply specifying a location’s name or lat-long coordinates.</p>
+<p>ViewSwitch - Demonstrates the difference between BasicOrbitView and BasicFlyView. Allows the user to select the preferred view type and then enter the name or lat-lon coordinates of a new location to animate the view to.</p>
+<p>ViewLimits - Demonstrates how to keep the view within certain bounds.</p>
+<p>KeepingObjectsInView - Demonstrates keeping a set of scene elements visible by using the utility class ExtentVisibilitySupport.</p>
+<p>ViewControls - Shows the ViewControlsLayer and allows you to adjust its size, orientation, and the available controls.</p>
 ]]></content>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;最近公司交给的任务提前完成了，老大让研究一下WorldWindJava搞3D的地图，于是入了WorldWind的坑开始了倒腾之路。&lt;/p&gt;
+&lt;p&gt;最近公司交给的任务提前完成了，老大让研究一下WorldWindJava搞3D的地图，于是入了&lt;a href=&quot;https://worldwind.arc.nasa.gov/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;WorldWind&lt;/a&gt;的坑开始了倒腾之路。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;大致部署了一下开发环境，计划按照官方给的12个大类102个Demo逐个进行解读，一边啃一边记录吧。
     
@@ -57,7 +164,7 @@
       <category term="学习笔记" scheme="http://aihaoran.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="WorlsWindJava" scheme="http://aihaoran.top/tags/WorlsWindJava/"/>
+      <category term="WorldWindJava" scheme="http://aihaoran.top/tags/WorldWindJava/"/>
     
   </entry>
   
