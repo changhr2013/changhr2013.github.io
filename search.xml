@@ -19,7 +19,7 @@
 </tr>
 <tr>
 <td>gov.nasa.worldwind.animation</td>
-<td>动画类定义包，指定位置、角度等方式的动画飞行过程及控制</td>
+<td>动画类定义包，指定位置、角度等方式的动画飞行过程及控制<a id="more"></a></td>
 </tr>
 <tr>
 <td>gov.nasa.worldwindx.applications</td>

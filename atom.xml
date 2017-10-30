@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aihaoran.top/"/>
-  <updated>2017-10-30T16:51:52.389Z</updated>
+  <updated>2017-10-30T16:53:11.191Z</updated>
   <id>http://aihaoran.top/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://aihaoran.top/2017/10/31/World-Wind-Java-%E4%B8%BB%E8%A6%81%E5%8C%85%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E/"/>
     <id>http://aihaoran.top/2017/10/31/World-Wind-Java-主要包功能说明/</id>
     <published>2017-10-30T16:50:05.000Z</published>
-    <updated>2017-10-30T16:51:52.389Z</updated>
+    <updated>2017-10-30T16:53:11.191Z</updated>
     
     <content type="html"><![CDATA[<h1 id="World-Wind-Java主要包内容简表"><a href="#World-Wind-Java主要包内容简表" class="headerlink" title="World Wind Java主要包内容简表"></a>World Wind Java主要包内容简表</h1><table>
 <thead>
@@ -36,7 +36,7 @@
 </tr>
 <tr>
 <td>gov.nasa.worldwind.animation</td>
-<td>动画类定义包，指定位置、角度等方式的动画飞行过程及控制</td>
+<td>动画类定义包，指定位置、角度等方式的动画飞行过程及控制<a id="more"></a></td>
 </tr>
 <tr>
 <td>gov.nasa.worldwindx.applications</td>
@@ -100,7 +100,21 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;World-Wind-Java主要包内容简表&quot;&gt;&lt;a href=&quot;#World-Wind-Java主要包内容简表&quot; class=&quot;headerlink&quot; title=&quot;World Wind Java主要包内容简表&quot;&gt;&lt;/a&gt;World Wind Java主要包内容
+      &lt;h1 id=&quot;World-Wind-Java主要包内容简表&quot;&gt;&lt;a href=&quot;#World-Wind-Java主要包内容简表&quot; class=&quot;headerlink&quot; title=&quot;World Wind Java主要包内容简表&quot;&gt;&lt;/a&gt;World Wind Java主要包内容简表&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;包说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;gov.nasa.worldwind&lt;/td&gt;
+&lt;td&gt;World Wind顶级包&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gov.nasa.worldwind.animation&lt;/td&gt;
+&lt;td&gt;动画类定义包，指定位置、角度等方式的动画飞行过程及控制
     
     </summary>
     
