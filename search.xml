@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[World Wind Java 主要包功能说明]]></title>
       <url>/2017/10/31/World-Wind-Java-%E4%B8%BB%E8%A6%81%E5%8C%85%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E/</url>
-      <content type="html"><![CDATA[<h1 id="World-Wind-Java主要包内容简表"><a href="#World-Wind-Java主要包内容简表" class="headerlink" title="World Wind Java主要包内容简表"></a>World Wind Java主要包内容简表</h1><table>
+      <content type="html"><![CDATA[<h1 id="World-Wind-Java主要包内容简表"><a href="#World-Wind-Java主要包内容简表" class="headerlink" title="World Wind Java主要包内容简表"></a>World Wind Java主要包内容简表<a id="more"></a></h1><table>
 <thead>
 <tr>
 <th>包</th>
@@ -19,7 +19,7 @@
 </tr>
 <tr>
 <td>gov.nasa.worldwind.animation</td>
-<td>动画类定义包，指定位置、角度等方式的动画飞行过程及控制<a id="more"></a></td>
+<td>动画类定义包，指定位置、角度等方式的动画飞行过程及控制</td>
 </tr>
 <tr>
 <td>gov.nasa.worldwindx.applications</td>
